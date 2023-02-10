@@ -1,9 +1,12 @@
 <template>
-  <div class="container">
+  <div class="chatroom-content">
+    <div class="container">
     <Navbar />
     <ChatWindows/>
     <NewChatForm/>
   </div>
+  </div>
+  
 </template>
 
 <script>
@@ -29,3 +32,13 @@ export default {
   },
 };
 </script>
+
+<style scope>
+.chatroom-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

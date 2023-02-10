@@ -5,18 +5,15 @@ body, html {
 }
 
 body {
-background: #A4EE42;
-background-repeat: no-repeat;
-background-size: cover;
-background: linear-gradient(to bottom right, #A4EE42, #5BE4CB);
-  color: #444;
-}
-
-
+  background: #A4EE42;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(to bottom right, #A4EE42, #5BE4CB);
+  }
 
 .container {
   width: 90%;
-  max-width: 960px;
+  max-width: 970px;
   margin: 80px auto;
     backdrop-filter: blur(11px) saturate(149%);
     -webkit-backdrop-filter: blur(11px) saturate(149%);

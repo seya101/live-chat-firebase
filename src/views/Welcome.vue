@@ -1,5 +1,6 @@
 <template>
-  <div class="welcome container">
+  <header>
+    <div class="welcome container">
     <div v-if="showLogin">
       <h2>Login</h2>
       <LoginForm @login="enterChat" />
@@ -11,6 +12,7 @@
       <p>Already registered? <span @click="showLogin = true">Login</span> instead.</p>
     </div>
   </div>
+  </header>
 </template>
 
 <script>
@@ -35,6 +37,41 @@ export default {
 </script>
 
 <style>
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(318deg, #f892b9, #ffff99, #A4EE42, #5BE4CB, #9898ee);
+  background-size: 1000% 1000%;
+  
+  -webkit-animation: Coolgradient 41s linear infinite;
+  -moz-animation: Coolgradient 41s linear infinite;
+  -o-animation: Coolgradient 41s linear infinite;
+  animation: Coolgradient 41s linear infinite;
+}
+
+@-webkit-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-moz-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-o-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@keyframes Coolgradient { 
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
   .welcome {
     text-align: center;
     padding: 20px 0;
